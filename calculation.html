@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>CACULATE</title>
+</head>
+
+
+<body>
+    
+<div style="text-align: center;">
+
+    <input style="font-size: 50px; text-align: center;" id="boxone" type="number" placeholder="*****" required><br>
+    <input style="font-size: 50px; text-align: center;" id="boxtwo" type="number" placeholder="*****" required><br>
+    <input style="font-size: 50px; text-align: center;" id="answer" type="number" placeholder="ANSWER" required readonly>
+
+</div>
+   
+<div style="text-align: right;">
+    <button style="font-size: 23px; color: rgb(253, 253, 253); background-color: rgb(0, 0, 0);" onclick="add()">+</button>
+    <button style="font-size: 23px; color: rgb(253, 253, 253); background-color: rgb(0, 0, 0);" onclick="multiplication()">*</button>
+    <button style="font-size: 23px; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);" onclick=" division()">/</button>
+    <button style="font-size: 23px; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);" onclick="substraction()">-</button>
+    <button style="font-size: 23px; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);" onclick="reminder()">%</button>
+    
+</div>
+    
+    
+<script>
+        function add(){
+            var num1 = document.getElementById("boxone").value
+            var num2 = document.getElementById("boxtwo").value
+            var answer = Number(num1) +  Number(num2)
+            document.getElementById("answer").value = answer
+        }
+
+        function multiplication(){
+            var num1 = document.getElementById("boxone").value
+            var num2 = document.getElementById("boxtwo").value
+            var answer = Number(num1)  *  Number(num2)
+            document.getElementById("answer").value = answer
+        }
+
+        
+        function division(){
+            var num1 = document.getElementById("boxone").value
+            var num2 = document.getElementById("boxtwo").value
+            var answer = Number(num1)  /  Number(num2)
+            document.getElementById("answer").value = answer
+        }
+
+        function substraction(){
+            var num1 = document.getElementById("boxone").value
+            var num2 = document.getElementById("boxtwo").value
+            var answer = Number(num1)  -  Number(num2)
+            document.getElementById("answer").value = answer
+        }
+
+        function reminder(){
+            var num1 = document.getElementById("boxone").value
+            var num2 = document.getElementById("boxtwo").value
+            var answer = Number(num1)  %  Number(num2)
+            document.getElementById("answer").value = answer
+        }
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>States</title>
+</head>
+<body style="background-color: black;">
+
+
+    <div id="" style="text-align: center; font-size: 50px;">
+
+        <P style="color: white; font-family: cursive; text-align: center;">..WHAT COUNTRY ARE YOU..</P>
+        <select name="" id="country" onchange="showorhide()" style="font-size: 60px; border-radius: 18Px; border-color: green; border-style:ridge;">
+          
+            <option value=""></option>
+            <option value="niga">NIGERIA</option>
+            <option value="ama">AMERICA</option>
+            
+        </select>
+
+    </div>
+
+ 
+  <div id="omo" style="text-align: center; font-size: 50px;">
+      <p  style="color: rgb(255, 0, 0); font-family: cursive; text-align: center;">Select Your State</p>
+      <select name="" id="" style="font-size: 40px; border-radius: 20px;">
+          <option value=""></option>
+        <option value="">Lagos</option>
+        <option value="">Kogi</option>
+        <option value="">Benue</option>
+        <option value="">Calabar</option>
+        <option value="">Taraba</option>
+      </select>
+    </div>
+
+    <div id="john" style="text-align: center; font-size: 50px;">
+        <p  style="color: rgb(51, 255, 0); font-family: cursive; text-align: center;">Select your State</p>
+        <select name="" id="" style="font-size: 40px;border-radius: 20px;">
+            <option value=""></option>
+            <option value="">chigago</option>
+            <option value="">California</option>
+            <option value="">new york</option>
+            <option value="">florida</option>
+            <option value="">las vegas</option>
+        </select>
+    </div>
+
+    <script>
+         document.getElementById("omo").style.display = "none"
+         document.getElementById("john").style.display = "none"
+
+         function showorhide(){
+              let country = document.getElementById("country").value
+              
+              if (country === "niga"){
+                  document.getElementById("omo").style.display = "block"
+                  document.getElementById("john").style.display = "none"
+              }
+              else if (country === "ama"){
+                  document.getElementById("john").style.display = "block"
+                  document.getElementById("omo").style.display = "none"
+              }
+              else (
+                  document.getElementById("omo").style.display = "none"
+              )
+            }
+    </script>
+</body>
+</html>

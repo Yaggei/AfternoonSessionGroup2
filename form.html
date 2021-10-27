@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <style>
+        .omo{
+           background-image: url("download\ \(11\).jpg"); 
+        }
+        .omo input{
+            border-color: goldenrod;
+        }
+        
+       
+    </style>
+</head>
+<body class="omo">
+    <div style="text-align: center; font-family: cursive; border: 5px;">
+        
+        <h1 style="color:gold; font-size: 100px; background-color:rgb(0, 0, 0);">...AGE REGISTRATION...</h1>
+        <h1 style="color:gold; background-color: black;font-size: 50px;">ENTER AGE</h1>
+        <input style="font-size: 70px;font-family: cursive; text-align: center; border-radius: 20px; color: rgb(168, 166, 166);" type="number" placeholder="Age" id="age"><br><br>
+        <button style="font-size: 50px;color: rgb(255, 255, 255);background-color: blue; border-radius: 20px;" onclick="register()">Register</button><br>
+
+        <p class="popup" style="color: rgb(0, 89, 255); font-size: 44px;" id="message"></p>
+       
+    </div>
+    
+    <script>
+
+        function register(){
+            var age = document.getElementById ("age").value
+
+            if(age <=17 && age >=1){
+                // alert("YOU ARE A CHILD").getElementById 
+                document.getElementById("message").innerHTML = "U B CHILD"
+                document.getElementById("message").style = "font-family:cursive;color: pink; font-size: 44px; "
+            }
+            else if(age <=29 && age >=18){
+                // alert("YOU ARE A TEENAGER").getElementById 
+                document.getElementById("message").innerHTML = "U B TEENAGER"
+                document.getElementById("message").style = "color:yellow;font-size: 44px; "
+            }
+            else if(age <=79 && age >=30){
+                // alert("YOU  ARE AN ADULT").getElementById 
+                document.getElementById("message").innerHTML = "U B ADULT"
+                document.getElementById("message").style = "color: rgb(117, 255, 4);font-size: 44px;"
+            }
+            else{
+                // alert("INPUT A VAILD AGE").getElementById 
+                document.getElementById("message").innerHTML = "ERROR!!!!"
+                document.getElementById("message").style ="color: red; font-size: 60px;"
+            }
+        }
+
+    </script>
+</body>
+</html>

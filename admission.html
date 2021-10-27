@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Admission Status</title>
+</head>
+<body>
+
+    <input type="number" id="jambscore">
+    <button onclick="check()">Check</button>
+    <p id="message"></p>
+
+    <script>
+
+        function check(){
+            var score = document.getElementById("jambscore").value
+            if(score < 180){
+                document.getElementById("message").innerHTML = "Sorry no admission given"
+            }
+            else if(score >= 180 && score <= 400){
+                document.getElementById("message").innerHTML = "Admission granted"
+            }
+            else if(score > 400){
+                document.getElementById("message").innerHTML = "Sorry the maximum score for jamb is 400!!!"
+            }
+            else if(score === 0){
+                document.getElementById("message").innerHTML = "Enter valid score"
+            }
+            else {
+                document.getElementById("message").innerHTML = "Enter valid score"
+            }
+        }
+
+    </script>
+
+</body>
+</html>

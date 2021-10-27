@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <div>
+
+        <p>Have You Written Jamb?</p>
+
+        <select name="" id="jambstatus" onchange="showorhide()">
+          <option value=""></option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+         </select>
+
+    </div>
+
+
+    <div id="jambscore">
+
+        <P>What Was Your Score?</P>
+        <input type="number" placeholder="Enter Jamb Score">
+
+    </div>
+
+    <script>
+        document.getElementById("jambscore").style.display = "none"
+
+        function showorhide(){
+            let jambstatus = document.getElementById("jambstatus").value
+
+            if (jambstatus === "Yes"){
+                document.getElementById("jambscore").style.display = "block"
+            }
+            else {
+                document.getElementById("jambscore").style.display = "none"
+            } 
+        }
+    </script>
+</body>
+</html>
