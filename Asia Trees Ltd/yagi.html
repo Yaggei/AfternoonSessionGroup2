@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+h1{
+   text-align: center;
+}
+.imageContainer {
+   margin-left:36%;
+   display: inline-block;
+   position: relative;
+   text-align: center;
+   color: rgb(64, 11, 124);
+}
+.caption{
+   font-size: 25px;
+   font-weight: bolder;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.BL {
+   position: absolute;
+   bottom: 8px;
+   left: 16px;
+}
+.TL{
+   position: absolute;
+   top: 8px;
+   left: 16px;
+}
+.TR {
+   position: absolute;
+   top: 8px;
+   right: 16px;
+}
+.BR {
+   position: absolute;
+   bottom: 8px;
+   right: 16px;
+}
+.center {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+<h1>Place text on image example</h1>
+<div class="imageContainer">
+<img src="black-and-white-tree.jpg">
+<div class="caption BL">Bottom Left Text</div>
+<div class="caption TL" >ASIA SO SO SOS </div>
+<div class="caption TR">Top Right Text</div>
+<div class="caption BR">Bottom Right Text</div>
+<div class="caption center">Centered Text</div>
+</div>
+</body>
+</html>
